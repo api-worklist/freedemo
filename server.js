@@ -46,7 +46,7 @@ app.post("/", (req, res) => {
     !barber ||
     barber === "kuaför"
   ) {
-    return res.status(402).json("incorrect from submission");
+    return res.status(402).json("incorrect from submission!");
   }
   db("users")
     .returning("*")
